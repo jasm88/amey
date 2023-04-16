@@ -1,0 +1,32 @@
+
+.BlurbBox {
+    width: 50%;
+    margin: auto;
+    padding-top: 39px;
+    padding-bottom: 50px;
+   
+    &__introduction {
+      font-size: 25px;
+      padding-bottom: 20px;
+      font-weight: 1000;
+      border-bottom: 2px solid #0022ff;
+
+    }
+    &__body {
+      p,
+      ol,
+      ul,
+      li {
+        font-size: 20px;
+        line-height: 27px;
+        font-weight: 300;
+      }
+      a {
+        font-size: 20px;
+        line-height: 27px;
+        font-weight: 300;
+        text-decoration: underline;
+      }
+    }
+  }
+  

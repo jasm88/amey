@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  amey-test-site:
+    image: ${DOCKER_REGISTRY-}ameytestsite
+    build:
+      context: .
+      dockerfile: src/amey-test-site/Dockerfile

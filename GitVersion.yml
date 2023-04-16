@@ -1,0 +1,22 @@
+next-version: 1.0
+assembly-versioning-scheme: MajorMinorPatch
+assembly-file-versioning-scheme: MajorMinorPatchTag
+assembly-informational-format: "{NugetVersionV2}"
+mode: Mainline
+continuous-delivery-fallback-tag: ""
+branches:
+  master:
+    tag: ""
+    increment: Patch
+  release:
+    regex: ^releases?[/-]
+    tag: rc
+  feature:
+    regex: ^features?[/-]
+    tag: alpha-{BranchName}
+  hotfix:
+    regex: ^hotfix(es)?[/-]
+    tag: rc
+  develop:
+    regex: ^dev(elop)?(ment)?$
+    tag: beta
